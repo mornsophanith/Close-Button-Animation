@@ -1,0 +1,65 @@
+
+.bg {
+    background: black;
+    position: relative;
+    width: 20%;
+    height: 100px;
+}
+/* animation close menu side start */
+.btn-close-nav {
+    left: 86% !important;
+}
+.btn-close-nav {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    text-indent: -9999px;
+    border: 0;
+    left: 0;
+    top: 5px;
+    background-color: var(--bs-link-color);
+    animation-delay: .5s;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.no-backgroun {
+    background: none !important;
+}
+.btn-close-nav:hover::before {
+    transform: rotate(180deg);
+}
+.no-backgroun::before {
+    background-color: var(--bs-link-color) !important;
+}
+.no-backgroun:after {
+    background-color: var(--bs-link-color) !important;
+}
+.btn-close-nav::before {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 50%;
+    margin-left: -10px;
+    width: 30px;
+    height: 4px;
+    content: "";
+    transition: all .5s ease 0s;
+    transform: rotate(45deg);
+    background-color: #fff;
+}
+.btn-close-nav:hover::after {
+    transform: rotate(0);
+}
+.btn-close-nav::after {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 50%;
+    margin-left: -10px;
+    width: 30px;
+    height: 4px;
+    content: "";
+    transition: all .5s ease 0s;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background-color: #fff;
+}
+/* animation close menu side end */
